@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Purchase Order Email</title>
+</head>
+<body>
+<h2>Thank you for your purchase!</h2>
+
+<p>Dear <span th:text="${purchaseOrder.customerName}"></span>,</p>
+
+<p>Thank you for choosing our store. Here are the details of your purchase:</p>
+
+<table>
+    <tr>
+        <td>Order Number:</td>
+        <td><span th:text="${purchaseOrder.id}"></span></td>
+    </tr>
+    <tr>
+        <td>Order Date:</td>
+        <td><span th:text="${purchaseOrder.orderDate}"></span></td>
+    </tr>
+    <tr>
+        <td>Total Price:</td>
+        <td><span th:text="${purchaseOrder.totalPrice}"></span></td>
+    </tr>
+</table>
+
+<p>If you have any questions or need further assistance, please don't hesitate to contact us.</p>
+
+<p>Thank you for shopping with us!</p>
+
+<p>Sincerely,</p>
+<p>CHANEL TEAM</p>
+</body>
+</html>

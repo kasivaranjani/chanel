@@ -1,0 +1,20 @@
+spring:
+
+  mail:
+    #host: smtp.gmail.com in the configuration refers to the hostname or address of the SMTP server provided by Gmail.
+    host: smtp.gmail.com
+    port: 587
+    username: sivaranjani262001@gmail.com
+    password: wzsqdqyjuxdggdwt
+    properties:
+      #For Getting credentials purpose
+      mail:
+        smtp:
+          auth: true
+         # smtp.starttls.enable is set to true to enable the STARTTLS encryption protocol for secure communication.
+          starttls:
+            enable: true
+    thymeleaf:
+      enabled: true
+      prefix: classpath:/templates/
+      suffix: .html
